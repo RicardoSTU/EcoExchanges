@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Green Exchange</title>
+ <meta charset="utf-8">
+ <style>
+  body {
+   background-color: lightgreen;
+  }
+  h1 {
+   text-align: center;
+   font-size: 36px;
+   color: white;
+   margin-top: 50px;
+  }
+  form {
+   width: 50%;
+   margin: auto;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px grey;
+  }
+  label {
+   display: block;
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: grey;
+  }
+  input[type="text"], input[type="email"], input[type="password"], select, input[type="file"] {
+   width: 100%;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 5px;
+   border: none;
+   margin-bottom: 20px;
+  }
+  input[type="submit"] {
+   background-color: green;
+   color: white;
+   font-size: 24px;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+  }
+  input[type="submit"]:hover {
+   background-color: darkgreen;
+  }
+ </style>
+</head>
+<body>
+ <h1>Green Exchange / ����� �������</h1>
+ <form action="#" method="post" enctype="multipart/form-data">
+  <label for="item">�����:</label>
+  <input type="text" id="item" name="item" placeholder="������� ������� ����������" required>
+
+  <label for="category">���������:</label>
+  <select id="category" name="category" required>
+   <option value="">��������� �����?��</option>
+   <option value="hat">�����</option>
+   <option value="shirt">�������</option>
+   <option value="pants">�����</option>
+   <option value="shoes">����������</option>
+   <option value="accessories">���������</option>
+  </select>
+
+  <label for="size">?��?�:</label>
+  <input type="text" id="size" name="size" placeholder="?��?��? ����������" required>
+
+  <label for="condition">�������� �����:</label>
+  <select id="condition" name="condition" required>
+   <option value="">������?����� �����</option>
+   <option value="new">��?�</option>
+   <option value="like-new">�? �����</option>
+   <option value="good">�����</option>
+   <option value="fair">����</option>
+   <option value="poor">����������������</option>
+  </select>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email ����������" required>
+
+  <label for="password">������:</label>
+  <input type="password" id="password" name="password" placeholder="������ ����������" required>
+
+  <label for="photo">�?�?�:</label>
+  <input type="file" id="photo" name="photo" accept="image/*" required>
+
+  <input type="submit" value="�����????">
+ </form>
+</body>
+</html> 
